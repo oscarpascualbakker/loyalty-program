@@ -55,28 +55,42 @@ This smart contract is designed to manage a loyalty program. Users can earn and 
 
 7. **Ownership Transfer**: If needed, the original owner can transfer ownership of the contract to another address using `setOwner`.
 
-
 ## Testing & Static Code Analysis
 
-For testing and static code analysis, you can use Truffle, Ganache, and Slither:
+For testing and static code analysis, you can use Truffle, Ganache, and Slither.
 
-```bash
+```
 # Compile the contract
-truffle compile --all
+truffle compile
 
 # Run tests
 truffle test
 ```
 
+If called through a Docker container:
+
+```
+docker-compose run --rm loyalty truffle test
+# or
+docker compose run --rm loyalty truffle test
+```
+
 For static code analysis, you can use Slither:
 
-```bash
+```
 # Run Slither in the project directory
 slither .
 ```
 
-This should provide a detailed assessment of code quality and potential vulnerabilities.
+If called through a Docker container:
 
+```
+docker-compose run --rm slither slither .
+# or
+docker compose run --rm slither slither .
+```
+
+This should provide a detailed assessment of code quality and potential vulnerabilities.
 
 ## Disclaimer
 
