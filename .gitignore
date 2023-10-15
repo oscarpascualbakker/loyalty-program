@@ -1,0 +1,8 @@
+# General
+.env
+
+# NFT
+node_modules/
+build/
+deployed/
+metadata/

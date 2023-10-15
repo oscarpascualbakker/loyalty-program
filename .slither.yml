@@ -1,0 +1,2 @@
+contracts_to_exclude:
+  - "node_modules/@openzeppelin/contracts/*.sol"
